@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=6.5",
+    "npm": ">=3.10"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "babel-polyfill": "^6.23.0",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "classnames": "^2.2.5",
+    "cookie-parser": "^1.4.3",
+    "core-js": "^2.4.1",
+    "express": "^4.15.2",
+    "express-jwt": "^5.1.0",
+    "fastclick": "^1.0.6",
+    "history": "^4.6.1",
+    "isomorphic-style-loader": "2.0.0",
+    "jsonwebtoken": "^7.3.0",
+    "loaders.css": "^0.1.2",
+    "lodash": "^4.17.4",
+    "node-fetch": "^1.6.3",
+    "normalize.css": "^6.0.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "pretty-error": "^2.1.0",
+    "prop-types": "^15.5.8",
+    "query-string": "^4.3.2",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-bootstrap-tabs": "^1.0.0",
+    "react-cookie": "1.0.5",
+    "react-dom": "^15.5.4",
+    "react-loaders": "^2.5.0",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "redux-thunk": "^2.2.0",
+    "sequelize": "^3.30.4",
+    "serialize-javascript": "^1.3.0",
+    "source-map-support": "^0.4.14",
+    "sqlite3": "^3.1.8",
+    "universal-router": "^3.0.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "scripts": {
+    "start": "node About.route.js"
+  }
+}

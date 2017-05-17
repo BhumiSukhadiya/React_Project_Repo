@@ -1,0 +1,90 @@
+{
+  "blueprints": [
+    {
+      "name": "dumb-m",
+      "description": "Generates a dumb react component in a component directory",
+      "usage": "dumb-m <component-name>/<component-name>",
+      "files": [
+        {
+          "blueprint-path": "config/blueprints/dumb-component.ejs",
+          "parent-path": "src/client/components/<%= helpers.capitalize(parent) %>",
+          "target-path": "components/<%= helpers.capitalize(name) %>/<%= helpers.capitalize(name) %>.js"
+        }
+      ]
+    },
+    {
+      "name": "functional-m",
+      "description": "Generates a functional react component in a component directory",
+      "usage": "functional-m <component-name>/<component-name>",
+      "files": [
+        {
+          "blueprint-path": "config/blueprints/functional-component.ejs",
+          "parent-path": "src/client/components/<%= helpers.capitalize(parent) %>",
+          "target-path": "components/<%= helpers.capitalize(name) %>/<%= helpers.capitalize(name) %>.js"
+        }
+      ]
+    },
+    {
+      "name": "component",
+      "description": "Generates a component including react components, reducer, action, style & express route, controller, model",
+      "usage": "component [component-name]",
+      "files": [
+        {
+          "blueprint-path": "config/blueprints/component/component.ejs",
+          "target-path": "src/client/components/<%= helpers.capitalize(name) %>/<%= helpers.capitalize(name) %>.js"
+        },
+        {
+          "blueprint-path": "config/blueprints/component/component-actions.ejs",
+          "target-path": "src/client/components/<%= helpers.capitalize(name) %>/<%= helpers.capitalize(name) %>Actions.js"
+        },
+        {
+          "blueprint-path": "config/blueprints/component/component-reducer.ejs",
+          "target-path": "src/client/components/<%= helpers.capitalize(name) %>/<%= helpers.capitalize(name) %>Reducer.js"
+        },
+        {
+          "blueprint-path": "config/blueprints/component/component-styles.ejs",
+          "target-path": "src/client/components/<%= helpers.capitalize(name) %>/<%= helpers.capitalize(name) %>.css"
+        },
+        {
+          "blueprint-path": "config/blueprints/component/controller.ejs",
+          "target-path": "src/server/components/<%= name %>/<%= name %>.controller.js"
+        },
+        {
+          "blueprint-path": "config/blueprints/component/express-route.ejs",
+          "target-path": "src/server/components/<%= name %>/<%= name %>.routes.js"
+        },
+        {
+          "blueprint-path": "config/blueprints/component/model.ejs",
+          "target-path": "src/server/components/<%= name %>/<%= name %>.model.js"
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "description": "Generates a component including react components, reducer, action, style & express route, controller, model",
+      "usage": "page [page-name]",
+      "files": [
+        {
+          "blueprint-path": "config/blueprints/page/page.ejs",
+          "target-path": "src/client/pages/<%= name %>/<%= helpers.capitalize(name) %>.js"
+        },
+        {
+          "blueprint-path": "config/blueprints/component/component-actions.ejs",
+          "target-path": "src/client/pages/<%= name %>/<%= helpers.capitalize(name) %>Actions.js"
+        },
+        {
+          "blueprint-path": "config/blueprints/component/component-reducer.ejs",
+          "target-path": "src/client/pages/<%= name %>/<%= helpers.capitalize(name) %>Reducer.js"
+        },
+        {
+          "blueprint-path": "config/blueprints/component/component-styles.ejs",
+          "target-path": "src/client/pages/<%= name %>/<%= helpers.capitalize(name) %>.css"
+        },
+        {
+          "blueprint-path": "config/blueprints/page/page-route.ejs",
+          "target-path": "src/client/pages/<%= name %>/<%= helpers.capitalize(name) %>.route.js"
+        }
+      ]
+    }
+  ]
+}

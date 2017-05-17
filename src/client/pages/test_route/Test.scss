@@ -1,0 +1,26 @@
+.root {
+  width: 100%;
+  color: green;
+  .container {
+    margin: 0 auto;
+    display: table;
+
+    p {
+      color: rebeccapurple;
+    }
+  }
+}
+
+.btn{
+  width: 100px;
+  background: #333333;
+  height: 35px;
+  color: white;
+}
+
+.btn-primary{
+  background: white;
+  color: red;
+  font-style: italic;
+}
+
