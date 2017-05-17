@@ -1,0 +1,15 @@
+import React from 'react';
+import Layout from '../../components/Layout';
+import <%= helpers.capitalize(name) %> from './<%= helpers.capitalize(name) %>';
+
+const title = '<%= helpers.capitalize(name) %>';
+
+export default {
+    path: '/<%= name %>',
+    action() {
+        return {
+            title,
+            component: <Layout><<%= helpers.capitalize(name) %> title={title} /></Layout>,
+        };
+    },
+};

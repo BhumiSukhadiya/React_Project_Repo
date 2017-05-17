@@ -1,0 +1,9 @@
+.root {
+  width: 100%;
+  color: green;
+}
+.root .container {
+  margin: 0 auto;
+  display: table;
+
+}
