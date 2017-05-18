@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8d86e35b-85c9-40ca-8b36-eab35d58aa79" name="React Project" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="E:\React Demo" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
